@@ -39,12 +39,26 @@ nav ul li a{
 .navbar .menu_mobile{
     display: none;
 }
+.logo a{
+    text-decoration: none;
+}
+.logo a:visited{
+    color: black;
+}
+.logo a:hover{
+    text-shadow: wheat 1px 1px 1px;
+}
+.logo a:active{
+    text-decoration: none;
+
+}
 /* parte responsiva */
 @media only screen and (max-width:768px){
     
     .navbar .menu_mobile
         {    
         display: block;
+        cursor: pointer;
         }
     nav ul{
         width: 100%;
@@ -64,5 +78,8 @@ nav ul li a{
     }
     nav ul li a{
         color: white;
+    }
+    #menu{
+        transition: all 0.5s;
     }
 }
